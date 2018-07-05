@@ -2,34 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Single Page Apps for GitHub Pages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>David Kim</title>
     <meta name="description" content="Lightweight solution for deploying single page apps with GitHub Pages. Code and concept by Rafael Pedicini.">
-
-    <style>
-      html, body, div, span, a, p, ul, li, h1, code, nav {
-        margin: 0;
-        border: 0;
-        padding: 0;
-        box-sizing: inherit;
-        font: inherit;
-        text-decoration: inherit;
-        text-align: inherit;
-        color: inherit;
-        background: transparent;
-      }
-      /*pass window height (w/o scroll bars) down to react app, note can't use vh becasue that
-      includes scroll bars and mobile browser footer, etc so doesn't give viewable area*/
-      html, body { height: 100%; }
-      html { background-color: rgb(0, 120, 0); }
-      #root { background-color: #F0F0F0; min-height: 100%; }
-
-      /*required for IE/Edge to be compatible with left:50vw & transform:translate(-50%, 0),
-      otherwise there is a phantom div on the right side of the screen (from the left:50vw),
-      that the window will scroll to. Note the left:50vw and transform is used to center content
-      horizaontally based on vw to prevent content jump when vertical scroll bar show/hide.*/
-      body { overflow-x: hidden; }
-    </style>
 
     <!-- start favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="http://favicon.rafrex.com/green-grid-144-168-192/apple-touch-icon-57x57.png">
@@ -49,6 +24,14 @@
     <link rel="manifest" href="http://favicon.rafrex.com/green-grid-144-168-192/manifest.json">
     <link rel="mask-icon" href="http://favicon.rafrex.com/green-grid-144-168-192/safari-pinned-tab.svg" color="#00a800">
     <link rel="shortcut icon" href="http://favicon.rafrex.com/green-grid-144-168-192/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/default.css">
+    <link rel="stylesheet" href="/src/styles/font-awsome.min.css">
+    <link rel="stylesheet" href="/src/styles/light.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/nivo-lightbox.css">
+
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="http://favicon.rafrex.com/green-grid-144-168-192/mstile-144x144.png">
     <meta name="msapplication-config" content="http://favicon.rafrex.com/green-grid-144-168-192/browserconfig.xml">
@@ -89,8 +72,13 @@
 
   </head>
   <body>
-    <div id="root"></div>
+    <div style="height: 100%"id="root"></div>
     <!-- single page app in bundle.js -->
     <script src="/build/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
