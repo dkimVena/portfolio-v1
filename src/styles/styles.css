@@ -222,6 +222,10 @@ h1, h2, h3 {
 	color: rgba(0,0,0,.5)
 }
 
+.bannerText {
+	font-size: 35px;
+}
+
 @media screen and (max-width: 1030px) {
   .content {
     font-size: 20px;
@@ -230,6 +234,10 @@ h1, h2, h3 {
 	.mainText {
 		font-size: 25px;
 		color: rgba(0,0,0,.5)
+	}
+
+	.bannerText {
+		font-size: 30px;
 	}
 }
 
@@ -242,6 +250,10 @@ h1, h2, h3 {
 		font-size: 20px;
 		color: rgba(0,0,0,.5)
 	}
+
+	.bannerText {
+		font-size: 25px;
+	}
 }
 
 @media screen and (max-width: 630px) {
@@ -252,6 +264,10 @@ h1, h2, h3 {
 	.mainText {
 		font-size: 15px;
 		color: rgba(0,0,0,.5)
+	}
+
+	.bannerText {
+		font-size: 20px;
 	}
 }
 
