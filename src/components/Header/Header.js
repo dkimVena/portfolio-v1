@@ -7,7 +7,7 @@ class Header extends Component {
       <li className="nav-item" key={item.url}>
         {
           item.url.startsWith('http') ?
-            <a className="nav-link" href={item.url}>{item.name}</a> :
+            <a className="nav-link" rel="noopener noreferrer" target="_blank" href={item.url}>{item.name}</a> :
             <Link className="nav-link" to={item.url}>{item.name}</Link>
         }
       </li>,

@@ -12,7 +12,7 @@ const Main = () =>
         <span className="mainText">He has passion in software development.</span>
         <br />
         <span className="mainText">Also, he is positive, analytical, self-motivated, and a fast learner.</span>
-        <Typist.Delay ms={500} />
+        <Typist.Delay ms={200} />
       </Typist>
     </div>
   </div>;
