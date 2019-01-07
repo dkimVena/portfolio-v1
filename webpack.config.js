@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: `${__dirname}/src/index.js`,
@@ -9,16 +10,26 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-    ],
+    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }],
   },
 
-  plugins: process.argv.indexOf('-p') === -1 ? [] : [
-    new webpack.optimize.UglifyJsPlugin({
-      output: {
-        comments: false,
-      },
-    }),
-  ],
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.js', '.jsx', '.react.js'],
+    mainFields: ['browser', 'module', 'main'],
+    alias: {
+      components: path.resolve('./src/components'),
+    },
+  },
+
+  plugins:
+    process.argv.indexOf('-p') === -1
+      ? []
+      : [
+        new webpack.optimize.UglifyJsPlugin({
+          output: {
+            comments: false,
+          },
+        }),
+      ],
 };

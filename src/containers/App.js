@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 // import Home from './Home';
 // import ExampleComponent from './ExampleComponent';
-import Header from '../components/Header';
-import About from '../components/About';
-import ProjectList from '../components/ProjectList';
-import Contact from '../components/Contact';
-import Detail from '../components/Detail';
-import Main from '../components/Main';
+import Header from 'components/Header';
+import About from 'components/About';
+import ProjectList from 'components/ProjectList';
+import Contact from 'components/Contact';
+import Detail from 'components/Detail';
+import Main from 'components/Main';
 // import Breadcrumbs from './Breadcrumbs';
 
 class App extends Component {
@@ -53,7 +53,8 @@ class App extends Component {
         {
           title: 'Korean Community Website',
           image: '/src/images/COMMUNITY.png',
-          description: 'Developed community website for Korean living in Canada as a full stack developer',
+          description:
+            'Developed community website for Korean living in Canada as a full stack developer',
           date: 'OCT. 01. 2017 – MAY. 23. 2018',
           features: [
             '• Fully responsive design to support mobile devices, tablets, browsers',
@@ -102,6 +103,20 @@ class App extends Component {
           ],
           url: 'https://todos-today.herokuapp.com/',
         },
+        {
+          title: 'Anonymous Chat',
+          image: '/src/images/CHAT.png',
+          description: 'App for chatting anonymously',
+          date: 'JAN. 2. 2019 – JAN. 6. 2019',
+          features: [
+            '• User can choose avatar',
+            '• User can create chat room and have chatting anonymously',
+            '• Fully responsive design to support all devices',
+            '• Developing the frontend part of website using React, Sementic-ui',
+            '• Developing the backend part of website using Nodejs, Express, Socket.io',
+          ],
+          url: 'https://gookchat.herokuapp.com/',
+        },
       ],
     };
   }
@@ -114,11 +129,15 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route
             path="/main"
-            render={props => <ProjectList {...props} projects={this.state.mainProject} type="main" />}
+            render={props => (
+              <ProjectList {...props} projects={this.state.mainProject} type="main" />
+            )}
           />
           <Route
             path="/side"
-            render={props => <ProjectList {...props} projects={this.state.sideProject} type="side" />}
+            render={props => (
+              <ProjectList {...props} projects={this.state.sideProject} type="side" />
+            )}
           />
           <Route path="/contact" component={Contact} />
           <Route
