@@ -51,6 +51,20 @@ class App extends Component {
       ],
       sideProject: [
         {
+          title: 'Anonymous Chat',
+          image: '/src/images/CHAT.png',
+          description: 'App for chatting anonymously',
+          date: 'JAN. 2. 2019 – JAN. 6. 2019',
+          features: [
+            '• User can choose avatar',
+            '• User can create chat room and have chatting anonymously',
+            '• Fully responsive design to support all devices',
+            '• Developing the frontend part of website using React, Sementic-ui',
+            '• Developing the backend part of website using Nodejs, Express, Socket.io',
+          ],
+          url: 'https://gookchat.herokuapp.com/',
+        },
+        {
           title: 'Korean Community Website',
           image: '/src/images/COMMUNITY.png',
           description:
@@ -61,19 +75,6 @@ class App extends Component {
             '• Used React, Redux, ES6, Nodejs, Express, MongoDB',
           ],
           url: 'https://stark-wildwood-79367.herokuapp.com/community',
-        },
-        {
-          title: 'Daily Board',
-          image: '/src/images/DAILY.png',
-          description: 'App for posting daily memo or contents and sharing with other users (SNS)',
-          date: 'DEC. 19. 2017 – DEC. 29. 2017',
-          features: [
-            '• Developing the user regist, writing memo, comment, search user, like',
-            '• Fully responsive design to support all devices',
-            '• Developing the frontend part of website using React, Redux, ES6, MaterializeCSS, JQuery',
-            '• Developing the backend part of website using Nodejs, Express, MongoDB',
-          ],
-          url: 'https://dailyboard.herokuapp.com/',
         },
         {
           title: 'Food WikiPedia',
@@ -104,18 +105,17 @@ class App extends Component {
           url: 'https://todos-today.herokuapp.com/',
         },
         {
-          title: 'Anonymous Chat',
-          image: '/src/images/CHAT.png',
-          description: 'App for chatting anonymously',
-          date: 'JAN. 2. 2019 – JAN. 6. 2019',
+          title: 'Daily Board',
+          image: '/src/images/DAILY.png',
+          description: 'App for posting daily memo or contents and sharing with other users (SNS)',
+          date: 'DEC. 19. 2017 – DEC. 29. 2017',
           features: [
-            '• User can choose avatar',
-            '• User can create chat room and have chatting anonymously',
+            '• Developing the user regist, writing memo, comment, search user, like',
             '• Fully responsive design to support all devices',
-            '• Developing the frontend part of website using React, Sementic-ui',
-            '• Developing the backend part of website using Nodejs, Express, Socket.io',
+            '• Developing the frontend part of website using React, Redux, ES6, MaterializeCSS, JQuery',
+            '• Developing the backend part of website using Nodejs, Express, MongoDB',
           ],
-          url: 'https://gookchat.herokuapp.com/',
+          url: 'https://dailyboard.herokuapp.com/',
         },
       ],
     };
