@@ -51,6 +51,37 @@ class App extends Component {
       ],
       sideProject: [
         {
+          title: 'Slack App',
+          image: '/src/images/SLACKAPP.png',
+          description: 'Slack App clone',
+          date: 'JAN. 7. 2019 – JAN. 23. 2019',
+          features: [
+            '• Changing avatar',
+            '• Create and join a channel',
+            '• Sending direct message to other users',
+            '• Sending Image file to other users',
+            '• Changing UI color',
+            '• Developing the frontend part of website using React, Sementic-ui',
+            '• Developing the backend part of website using Firebase',
+          ],
+          url: 'https://gookslack.herokuapp.com/',
+        },
+        {
+          title: 'CoreTex',
+          image: '/src/images/CORETEX.png',
+          description: 'App for helping children from amnesia, dementia, and post stroke symptoms',
+          date: 'JAN. 18. 2019 – JAN. 20. 2019',
+          features: [
+            '• Exercise to help autistic people with different cognitive read and understand facial expressions',
+            '• Exercise to help people who suffer cognitive impairment following intermediate and severe strokes',
+            '• Traking progress of exercise',
+            '• Donation through the web site',
+            '• Developing the frontend part of website using React, Sementic-ui',
+            '• Developing the backend part of website using Firebase',
+          ],
+          url: 'https://devpost.com/software/cortex',
+        },
+        {
           title: 'Anonymous Chat',
           image: '/src/images/CHAT.png',
           description: 'App for chatting anonymously',
