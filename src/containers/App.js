@@ -96,6 +96,19 @@ class App extends Component {
           url: 'https://gookchat.herokuapp.com/',
         },
         {
+          title: 'Movie Info App',
+          image: '/src/images/MOVIEQL.png',
+          description: 'App for movie information',
+          date: 'DEC. 2. 2018 – DEC. 15. 2018',
+          features: [
+            '• Movie List',
+            '• Movie Information (Rating, Synopsis, Suggested movies',
+            '• Developing the frontend part of website using React, Styled-Component',
+            '• Developing the backend part of website using GraphQL',
+          ],
+          url: 'https://gookmovieql.herokuapp.com',
+        },
+        {
           title: 'Korean Community Website',
           image: '/src/images/COMMUNITY.png',
           description:
