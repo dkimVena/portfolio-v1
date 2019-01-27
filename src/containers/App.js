@@ -102,11 +102,22 @@ class App extends Component {
           date: 'DEC. 2. 2018 – DEC. 15. 2018',
           features: [
             '• Movie List',
-            '• Movie Information (Rating, Synopsis, Suggested movies',
+            '• Movie Information (Rating, Synopsis, Suggested movies)',
             '• Developing the frontend part of website using React, Styled-Component',
             '• Developing the backend part of website using GraphQL',
           ],
           url: 'https://gookmovieql.herokuapp.com',
+        },
+        {
+          title: 'Food Company Website',
+          image: '/src/images/GOOKFOOD.png',
+          description: 'Food Company Website',
+          date: 'NOV. 8. 2018 – NOV. 20. 2018',
+          features: [
+            '• Food company Advertisement',
+            '• Developing the frontend part of website using HTML, CSS',
+          ],
+          url: 'https://gookfood.herokuapp.com',
         },
         {
           title: 'Korean Community Website',
